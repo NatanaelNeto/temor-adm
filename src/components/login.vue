@@ -8,7 +8,7 @@ const password = ref('');
 
 <template>
   <form action="" class="login">
-    <div class="login__group">
+    <div class="login__group login__group--error">
       <label for="username">Usuário</label>
       <input v-model="username" type="text">
     </div>
@@ -32,22 +32,22 @@ const password = ref('');
   border-radius: 20px;
   background-color: var(--white);
   box-shadow: 0px 2px 8px #00000011;
-  
+
   &__group {
     display: flex;
     flex-flow: column;
     gap: 2px;
     margin-bottom: 10px;
-    
+
     &:last-of-type {
       margin-bottom: 20px;
     }
-    
+
     label {
       font-size: 12px;
       color: var(--gray);
     }
-    
+
     input {
       border: none;
       outline: none;
@@ -57,9 +57,20 @@ const password = ref('');
       background: none;
       border-bottom: solid 2px var(--green);
       font-size: 16px;
-      
+
       &:focus {
         box-shadow: 0px 2px 8px #00000011;
+      }
+    }
+
+    &--error {
+      label {
+        color: var(--red);
+      }
+
+      input {
+        border-bottom-color: var(--red);
+        color: var(--red);
       }
     }
   }
