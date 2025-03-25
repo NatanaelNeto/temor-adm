@@ -17,6 +17,7 @@ const password = ref('');
       <input v-model="password" type="password">
     </div>
     <button type="submit" class="login__button">
+      <v-icon name="fa-flag" />
       Login
     </button>
   </form>
