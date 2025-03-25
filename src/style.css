@@ -8,7 +8,16 @@
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-html, body {
+:root {
+  --black: #252323ff;
+  --gray: #70798cff;
+  --white: #f5f1edff;
+  --offwhite: #dad2bcff;
+  --green: #60712fff;
+}
+
+html,
+body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
