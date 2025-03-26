@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import Login from './components/login.vue';
+import Toast from './components/toast.vue';
 </script>
 
 <template>
   <main>
     <Login />
+    <Toast />
   </main>
 </template>
 

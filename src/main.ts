@@ -3,9 +3,9 @@ import './style.css'
 import App from './App.vue'
 
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
-import { MdWarningRound, OiBlocked, PrInfo } from "oh-vue-icons/icons";
+import { BiCheck, MdWarningRound, OiBlocked, PrInfo } from "oh-vue-icons/icons";
 
-addIcons(PrInfo, MdWarningRound, OiBlocked);
+addIcons(PrInfo, MdWarningRound, OiBlocked, BiCheck);
 
 const app = createApp(App)
 

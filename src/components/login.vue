@@ -1,14 +1,18 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
-
+import toastService from '../services/toast';
 
 const username = ref('');
 const password = ref('');
+
+const testToast = (e: any) => {
+  e.preventDefault();
+}
 </script>
 
 <template>
   <form action="" class="login">
-    <div class="login__group login__group--error">
+    <div class="login__group">
       <label for="username">Usuário</label>
       <input v-model="username" type="text">
     </div>
@@ -16,7 +20,7 @@ const password = ref('');
       <label for="username">Senha</label>
       <input v-model="password" type="password">
     </div>
-    <button type="submit" class="login__button">
+    <button type="submit" class="login__button" @click="testToast($event)">
       Login
     </button>
   </form>
